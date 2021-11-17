@@ -1,0 +1,11 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © meccaexpress
+
+//@version=5
+indicator("My Script")
+plot(close)
+curl -X GET \
+    -H "APCA-API-KEY-ID: {YOUR_API_KEY_ID}" \
+    -H "APCA-API-SECRET-KEY: {YOUR_API_SECRET_KEY}"\
+    https://{apiserver_domain}/v2/account
+    
